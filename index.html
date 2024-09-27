@@ -8,17 +8,19 @@
     body {
       font-family: Arial, sans-serif;
       background-color: #f4f4f4;
-      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
       margin: 0;
-      padding: 0;
     }
     .container {
       width: 100%;
       max-width: 600px;
-      margin: 0 auto;
       padding: 20px;
       background-color: white;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
     }
     .logo {
       max-width: 200px;
@@ -27,23 +29,23 @@
     }
     .header-section {
       background-color: #e49f84;
-      padding: 15px 20px; /* Adjusted padding for spacing */
+      padding: 15px 20px;
     }
     h1 {
       color: #000;
       font-size: 24px;
-      margin: 10px 0; /* Reduce space above and below */
+      margin: 10px 0;
     }
     p {
       color: #333;
       font-size: 18px;
-      margin: 5px 0; /* Reduced space between job title and profile pic */
+      margin: 5px 0;
     }
     .profile-pic {
       width: 150px;
       height: 150px;
       border-radius: 50%;
-      margin-top: 10px; /* Reduce space above the image */
+      margin-top: 10px;
     }
     .button {
       background-color: #ed6535;
@@ -52,14 +54,14 @@
       padding: 10px 20px;
       font-size: 18px;
       border-radius: 5px;
-      margin-top: 15px; /* Slight reduction in margin-top */
+      margin-top: 15px;
       cursor: pointer;
     }
     .contact-actions {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 15px; /* Reduced gap between button and LinkedIn */
+      gap: 15px;
       margin-top: 15px;
     }
     .linkedin-button img {
@@ -67,7 +69,7 @@
       height: 40px;
       vertical-align: middle;
       position: relative;
-      top: 7px; /* Further manual adjustment */
+      top: 7px;
     }
     .footer-text {
       margin-top: 20px;
@@ -96,7 +98,7 @@
       .linkedin-button img {
         width: 35px;
         height: 35px;
-        top: 6px; /* Adjustment for mobile */
+        top: 6px;
       }
       .footer-text {
         font-size: 18px;
