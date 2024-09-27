@@ -43,15 +43,6 @@
       border-radius: 50%;
       margin-top: 20px;
     }
-    .linkedin-button img {
-      width: 40px;
-      height: 40px;
-      margin-top: 20px;
-    }
-    .linkedin-button a {
-      display: inline-block;
-      text-decoration: none;
-    }
     .button {
       background-color: #ed6535;
       color: white;
@@ -62,11 +53,29 @@
       margin-top: 20px;
       cursor: pointer;
     }
+    .contact-actions {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .linkedin-button img {
+      width: 40px;
+      height: 40px;
+    }
+    .linkedin-button a {
+      display: inline-block;
+      text-decoration: none;
+    }
     .footer-text {
-      margin-top: 40px;
+      margin-top: 20px;
       color: #ed6535;
       font-size: 20px;
       font-weight: bold;
+    }
+    .footer-text:last-of-type {
+      margin-top: 5px; /* Reduced space between the two footer lines */
     }
     @media (max-width: 600px) {
       .container {
@@ -82,6 +91,10 @@
       .button {
         font-size: 16px;
         padding: 8px 16px;
+      }
+      .linkedin-button img {
+        width: 35px;
+        height: 35px;
       }
       .footer-text {
         font-size: 18px;
@@ -104,14 +117,15 @@
       <img src="https://raw.githubusercontent.com/Dylan94857/My-Business-Card/refs/heads/main/Profile%20pic.avif" alt="Dylan Goldstein" class="profile-pic">
     </div>
 
-    <!-- Add Contact Button -->
-    <button class="button" onclick="window.location.href='dylan_goldstein_contact.vcf'">Add Contact</button>
+    <!-- Add Contact Button and LinkedIn -->
+    <div class="contact-actions">
+      <button class="button" onclick="window.location.href='dylan_goldstein_contact.vcf'">Add Contact</button>
 
-    <!-- LinkedIn Button -->
-    <div class="linkedin-button">
-      <a href="https://www.linkedin.com/in/dylan-goldstein-mechanical-engineer">
-        <img src="https://raw.githubusercontent.com/Dylan94857/My-Business-Card/ee7293c7ca52796496c1caf34782e7a756885d4e/httpswww.google.comurlsa%3Di%26url%3Dhttps%253A%252F%252Fcommons.wikimedia.org%252Fwiki%252FFile%253ALinkedIn_logo_initials.png%26psig%3DAOvVaw3qI9hfKzj8ALEoLyytr670%26ust%3D1727558746962000%26source%3Dimages%26cd%3Dvfe%26opi%3D89978449%26ved%3D0CBQQjRxqFwoTCLjWuI.png" alt="LinkedIn">
-      </a>
+      <div class="linkedin-button">
+        <a href="https://www.linkedin.com/in/dylan-goldstein-mechanical-engineer">
+          <img src="https://raw.githubusercontent.com/Dylan94857/My-Business-Card/ee7293c7ca52796496c1caf34782e7a756885d4e/httpswww.google.comurlsa%3Di%26url%3Dhttps%253A%252F%252Fcommons.wikimedia.org%252Fwiki%252FFile%253ALinkedIn_logo_initials.png%26psig%3DAOvVaw3qI9hfKzj8ALEoLyytr670%26ust%3D1727558746962000%26source%3Dimages%26cd%3Dvfe%26opi%3D89978449%26ved%3D0CBQQjRxqFwoTCLjWuI.png" alt="LinkedIn">
+        </a>
+      </div>
     </div>
 
     <!-- Footer Description -->
