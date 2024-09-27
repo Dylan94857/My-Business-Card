@@ -1,9 +1,10 @@
 BEGIN:VCARD
 VERSION:3.0
-FN:Dylan Goldstein
+FN:Dylan Goldstein - OnPoint Sales Rep
 ORG:OnPoint Roofing
 TITLE:Sales Representative
 TEL;TYPE=CELL:+1 832-296-6908
 EMAIL:dylan94857@gmail.com
 URL:https://onpointroofingtx.com
+PHOTO;ENCODING=b;TYPE=JPEG:[Base64 encoded image data for profile picture]
 END:VCARD
