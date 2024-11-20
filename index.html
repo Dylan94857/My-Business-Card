@@ -77,19 +77,6 @@
       height: 40px;
       vertical-align: middle;
     }
-    .google-rating {
-      background-color: #1F456E;
-      color: white;
-      font-size: 18px;
-      padding: 15px;
-      margin: 20px 20px;
-      border-radius: 8px;
-      text-align: center;
-      cursor: pointer;
-    }
-    .google-rating:hover {
-      background-color: #16374E; /* Slightly darker shade on hover */
-    }
     .footer-text {
       margin-top: 20px;
       color: #1F456E;
@@ -98,6 +85,26 @@
     }
     .footer-text:last-of-type {
       margin-top: 5px;
+    }
+    .rating-value {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      color: #000; /* Black for the rating value */
+    }
+    .rating-stars {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      color: #f4b400; /* Google Yellow for stars */
+    }
+    .review-link {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      color: #1a73e8; /* Google Blue for links */
+      text-decoration: none;
+    }
+    .review-link:hover {
+      text-decoration: underline;
     }
     @media (max-width: 600px) {
       .container {
@@ -155,34 +162,12 @@
       <button class="button" onclick="window.location.href='set_appointment.html'">Set Appointment</button>
     </div>
 
-    <!-- Google Rating Section -->
+    <!-- Google Reviews Section -->
     <div class="google-rating">
-  <span class="rating-value">5.0</span>
-<span class="rating-stars">⭐⭐⭐⭐⭐</span>
-<a href="https://www.google.com/search?q=stone+castle+roofing+reviews" class="review-link">(88 Google reviews)</a>
-
-<style>
-  .rating-value {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    color: #000; /* Black for the rating value */
-  }
-  .rating-stars {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #f4b400; /* Google Yellow for stars */
-  }
-  .review-link {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #1a73e8; /* Google Blue for links */
-    text-decoration: none;
-  }
-  .review-link:hover {
-    text-decoration: underline;
-  }
-</style>
+      <span class="rating-value">5.0</span>
+      <span class="rating-stars">⭐⭐⭐⭐⭐</span>
+      <a href="https://www.google.com/search?q=stone+castle+roofing+reviews" class="review-link">(88 Google reviews)</a>
+    </div>
 
     <!-- Footer Description -->
     <p class="footer-text">Quality Roof Installation and Repair 🏠</p>
