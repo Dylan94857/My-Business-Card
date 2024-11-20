@@ -59,22 +59,22 @@
       padding: 10px 20px;
       font-size: 18px;
       border-radius: 5px;
-      margin-top: 15px;
       cursor: pointer;
+      flex: 1; /* Ensures equal spacing */
+      text-align: center;
     }
     .contact-actions {
       display: flex;
-      justify-content: center;
+      justify-content: space-between; /* Distributes buttons evenly */
       align-items: center;
-      gap: 15px;
+      gap: 15px; /* Adds spacing between items */
       margin-top: 15px;
+      padding: 0 20px; /* Adds padding to the sides for better spacing */
     }
     .linkedin-button img {
       width: 40px;
       height: 40px;
       vertical-align: middle;
-      position: relative;
-      top: 7px;
     }
     .footer-text {
       margin-top: 20px;
@@ -103,7 +103,6 @@
       .linkedin-button img {
         width: 35px;
         height: 35px;
-        top: 6px;
       }
       .footer-text {
         font-size: 18px;
@@ -126,15 +125,20 @@
       <img src="https://raw.githubusercontent.com/Dylan94857/My-Business-Card/refs/heads/main/Profile%20pic.avif" alt="Dylan Goldstein" class="profile-pic">
     </div>
 
-    <!-- Add Contact Button and LinkedIn -->
+    <!-- Add Contact Button, LinkedIn Button, and Set Appointment Button -->
     <div class="contact-actions">
+      <!-- Add Contact Button -->
       <button class="button" onclick="window.location.href='dylan_goldstein_contact.vcf'">Add Contact</button>
 
+      <!-- LinkedIn Button -->
       <div class="linkedin-button">
         <a href="https://www.linkedin.com/in/dylan-goldstein-mechanical-engineer">
           <img src="https://raw.githubusercontent.com/Dylan94857/My-Business-Card/ee7293c7ca52796496c1caf34782e7a756885d4e/httpswww.google.comurlsa%3Di%26url%3Dhttps%253A%252F%252Fcommons.wikimedia.org%252Fwiki%252FFile%253ALinkedIn_logo_initials.png%26psig%3DAOvVaw3qI9hfKzj8ALEoLyytr670%26ust%3D1727558746962000%26source%3Dimages%26cd%3Dvfe%26opi%3D89978449%26ved%3D0CBQQjRxqFwoTCLjWuI.png" alt="LinkedIn">
         </a>
       </div>
+
+      <!-- Set Appointment Button -->
+      <button class="button">Set Appointment</button>
     </div>
 
     <!-- Footer Description -->
