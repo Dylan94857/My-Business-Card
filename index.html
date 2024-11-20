@@ -10,10 +10,11 @@
       background-color: #f4f4f4;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start; /* Align content to the top of the screen */
       height: 100vh;
       margin: 0; /* Removes margin around the body */
       padding: 0; /* Ensures no extra padding */
+      overflow: hidden; /* Prevent scrolling */
     }
     .container {
       width: 100%;
@@ -75,6 +76,19 @@
       width: 40px;
       height: 40px;
       vertical-align: middle;
+    }
+    .google-rating {
+      background-color: #1F456E;
+      color: white;
+      font-size: 18px;
+      padding: 15px;
+      margin: 20px 20px;
+      border-radius: 8px;
+      text-align: center;
+      cursor: pointer;
+    }
+    .google-rating:hover {
+      background-color: #16374E; /* Slightly darker shade on hover */
     }
     .footer-text {
       margin-top: 20px;
@@ -139,6 +153,11 @@
 
       <!-- Set Appointment Button -->
       <button class="button" onclick="window.location.href='set_appointment.html'">Set Appointment</button>
+    </div>
+
+    <!-- Google Rating Section -->
+    <div class="google-rating" onclick="window.location.href='https://www.google.com/search?q=stone+castle+roofing+reviews'">
+      ⭐ 4.9/5 on Google Reviews! <br> Click to read reviews.
     </div>
 
     <!-- Footer Description -->
