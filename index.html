@@ -23,14 +23,13 @@
       text-align: center;
     }
     .logo {
-      max-width: 200px;
-      margin: 0 auto;
-      display: block;
-      height: auto; /* Maintains aspect ratio */
-      object-fit: contain; /* Ensures the image fits nicely */
-      padding: 0;
-      margin-top: 0;
-      margin-bottom: 0;
+      max-width: 200px; /* Set the desired width */
+      height: auto; /* Maintain aspect ratio */
+      display: block; /* Remove inline spacing */
+      margin: 0 auto; /* Center the image */
+      object-fit: contain; /* Ensure the image is fully visible */
+      clip-path: inset(10px 0 10px 0); /* Trims the top and bottom */
+      position: relative; /* Enables clipping */
     }
     .header-section {
       background-color: #59788E;
@@ -143,6 +142,3 @@
   </div>
 </body>
 </html>
-
-
-
