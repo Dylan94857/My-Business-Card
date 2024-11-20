@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Set Appointment - Dylan Goldstein</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #59788E; /* Set the background color */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0; /* Removes margin around the body */
+      padding: 0; /* Ensures no extra padding */
+    }
+    .container {
+      width: 100%;
+      max-width: 600px;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      margin: 0; /* Removes any margin from the container */
+    }
+    .logo {
+      max-width: 390px; /* Set the desired width for the logo */
+      height: auto; /* Maintain aspect ratio */
+      display: block; /* Center-align the logo */
+      margin: 0 auto; /* Ensure no margin around the logo */
+      object-fit: contain; /* Ensure the logo fits within its container */
+    }
+    .form-title {
+      color: white; /* Text color for form titles */
+      font-size: 20px;
+      text-align: left; /* Align titles to the left */
+      margin-bottom: 5px; /* Add spacing between the title and the input box */
+    }
+    .input-box {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 15px; /* Space between input fields */
+      box-sizing: border-box; /* Ensure proper sizing */
+    }
+    .submit-button {
+      background-color: #1F456E;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 18px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .submit-button:hover {
+      background-color: #16374E; /* Slightly darker color on hover */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Logo -->
+    <img src="cropped_logo.png" alt="Stone Castle Roofing Logo" class="logo">
+
+    <!-- Form Section -->
+    <form action="#" method="POST">
+      <!-- Name Field -->
+      <label for="name" class="form-title">Name:</label>
+      <input type="text" id="name" name="name" class="input-box" placeholder="Enter your name" required>
+
+      <!-- Phone Number Field -->
+      <label for="phone" class="form-title">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" class="input-box" placeholder="Enter your phone number" required>
+
+      <!-- Email Field -->
+      <label for="email" class="form-title">Email:</label>
+      <input type="email" id="email" name="email" class="input-box" placeholder="Enter your email" required>
+
+      <!-- Submit Button -->
+      <button type="submit" class="submit-button">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
