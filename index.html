@@ -5,21 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dylan Goldstein - Sales Representative</title>
   <style>
-    /* 
-      1) Use flexbox so the container is horizontally centered.
-      2) Use flex-direction: column so it stacks top to bottom.
-      3) Remove height: 100vh so the page can scroll vertically.
-      4) overflow-x: hidden locks horizontal scrolling.
-    */
+    /* Body uses flex for horizontal centering, 
+       vertical scroll is allowed, horizontal is hidden. */
     body {
       font-family: Arial, sans-serif;
       background-color: #f4f4f4;
       margin: 0;
       padding: 0;
       display: flex;
-      flex-direction: column; 
-      align-items: center;    /* horizontally center content */
-      overflow-x: hidden;     /* disable horizontal scroll */
+      flex-direction: column;
+      align-items: center;     /* horizontally center .container */
+      overflow-x: hidden;      /* no horizontal scroll */
     }
 
     .container {
@@ -28,12 +24,14 @@
       background-color: white;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
       text-align: center;
-      /* margin: 0 auto;  -- This is optional because flexbox + align-items:center
-         already centers it horizontally. Keeping it doesn’t hurt, but it’s not needed. */
     }
 
+    /* 
+      Reduced the width from 390px to 380px 
+      to shrink the logo proportionally by ~10px in height. 
+    */
     .logo {
-      max-width: 390px;
+      max-width: 380px;  /* was 390px */
       height: auto;
       display: block;
       margin: 0 auto;
@@ -60,7 +58,7 @@
       background: url("Website background.jpg") no-repeat center center;
       background-size: cover;
       text-align: center;
-      padding: 30px 0; /* space for the banner + pic */
+      padding: 30px 0;
     }
 
     .profile-pic {
@@ -71,12 +69,16 @@
       border: 3px solid #fff; /* White circular border */
     }
 
+    /* 
+      Reduced margin-top from 15px to 10px
+      to tighten space above the buttons.
+    */
     .contact-actions {
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 15px;
-      margin-top: 15px;
+      margin-top: 10px;  /* was 15px */
       padding: 0 20px;
     }
     .button {
@@ -96,8 +98,12 @@
       vertical-align: middle;
     }
 
+    /* 
+      Reduced margin from 30px to 20px 
+      to tighten space around the 5-star review section.
+    */
     .google-rating {
-      margin: 30px 0;
+      margin: 20px 0;  /* was 30px 0 */
     }
     .rating-value {
       font-family: Arial, sans-serif;
@@ -120,20 +126,23 @@
       text-decoration: underline;
     }
 
+    /* 
+      Reduced margin-top from 20px to 15px 
+      to tighten space above each footer text line.
+      You can adjust further as needed. 
+    */
     .footer-text {
-      margin-top: 20px;
+      margin-top: 15px;  /* was 20px */
       color: #1F456E;
       font-size: 20px;
       font-weight: bold;
     }
     .footer-text:last-of-type {
-      margin-top: 5px;
+      margin-top: 5px; /* remains at 5px to keep that smaller gap between final lines */
     }
 
     /* Responsive */
     @media (max-width: 600px) {
-      /* Container might already be centered by flexbox, but 
-         we can add extra padding if needed. */
       .container {
         padding: 10px;
       }
@@ -161,7 +170,11 @@
 <body>
   <div class="container">
     <!-- Logo -->
-    <img src="cropped_logo.png" alt="Stone Castle Roofing Logo" class="logo">
+    <img 
+      src="cropped_logo.png" 
+      alt="Stone Castle Roofing Logo" 
+      class="logo"
+    >
 
     <!-- Blue Header Section -->
     <div class="header-section">
@@ -178,23 +191,34 @@
       >
     </div>
 
-    <!-- Contact Buttons Section -->
+    <!-- Contact Buttons -->
     <div class="contact-actions">
-      <button class="button" onclick="window.location.href='dylan_goldstein_contact.vcf'">Add Contact</button>
+      <button class="button" onclick="window.location.href='dylan_goldstein_contact.vcf'">
+        Add Contact
+      </button>
+
       <div class="linkedin-button">
         <a href="https://www.linkedin.com/in/dylan-goldstein-mechanical-engineer">
-          <img src="https://raw.githubusercontent.com/Dylan94857/My-Business-Card/ee7293c7ca52796496c1caf34782e7a756885d4e/httpswww.google.comurlsa%3Di%26url%3Dhttps%253A%252F%252Fcommons.wikimedia.org%252Fwiki%252FFile%253ALinkedIn_logo_initials.png%26psig%3DAOvVaw3qI9hfKzj8ALEoLyytr670%26ust%3D1727558746962000%26source%3Dimages%26cd%3Dvfe%26opi%3D89978449%26ved%3D0CBQQjRxqFwoTCLjWuI.png"
-               alt="LinkedIn">
+          <img 
+            src="https://raw.githubusercontent.com/Dylan94857/My-Business-Card/ee7293c7ca52796496c1caf34782e7a756885d4e/httpswww.google.comurlsa%3Di%26url%3Dhttps%253A%252F%252Fcommons.wikimedia.org%252Fwiki%252FFile%253ALinkedIn_logo_initials.png%26psig%3DAOvVaw3qI9hfKzj8ALEoLyytr670%26ust%3D1727558746962000%26source%3Dimages%26cd%3Dvfe%26opi%3D89978449%26ved%3D0CBQQjRxqFwoTCLjWuI.png" 
+            alt="LinkedIn"
+          >
         </a>
       </div>
-      <button class="button" onclick="window.location.href='set_appointment.html'">Set Appointment</button>
+
+      <button class="button" onclick="window.location.href='set_appointment.html'">
+        Set Appointment
+      </button>
     </div>
 
-    <!-- Google Reviews Section -->
+    <!-- Google Reviews -->
     <div class="google-rating">
       <span class="rating-value">5.0</span>
       <span class="rating-stars">⭐⭐⭐⭐⭐</span>
-      <a href="https://www.google.com/search?q=stone+castle+roofing+reviews" class="review-link">
+      <a 
+        href="https://www.google.com/search?q=stone+castle+roofing+reviews" 
+        class="review-link"
+      >
         (88 Google reviews)
       </a>
     </div>
@@ -203,8 +227,5 @@
     <p class="footer-text">Quality Roof Installation and Repair 🏠</p>
     <p class="footer-text">Don't Settle For Less!</p>
   </div>
-</body>
-</html>
-
 </body>
 </html>
