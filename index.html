@@ -5,16 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dylan Goldstein - Sales Representative</title>
   <style>
+    /* 1) Removed display: flex; align-items; justify-content; height: 100vh; overflow: hidden; 
+          so the page can scroll naturally if content is taller than the screen. */
     body {
       font-family: Arial, sans-serif;
       background-color: #f4f4f4;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      height: 100vh;
       margin: 0;
       padding: 0;
-      overflow: hidden;
+      /* Remove or comment out the lines below to allow scrolling:
+         display: flex;
+         justify-content: center;
+         align-items: flex-start;
+         height: 100vh;
+         overflow: hidden;
+      */
     }
 
     .container {
@@ -23,8 +27,7 @@
       background-color: white;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
       text-align: center;
-      margin: 0;
-      /* No extra padding, but you can adjust if needed */
+      margin: 0 auto; /* Centers the container horizontally */
     }
 
     /* Logo style */
@@ -104,7 +107,7 @@
       font-family: Arial, sans-serif;
       font-size: 16px;
       font-weight: bold;
-      color: #1F456E; 
+      color: #1F456E;
     }
     .rating-stars {
       font-family: Arial, sans-serif;
@@ -114,7 +117,7 @@
     .review-link {
       font-family: Arial, sans-serif;
       font-size: 16px;
-      color: #1a73e8; /* Blue link */
+      color: #1a73e8;
       text-decoration: none;
     }
     .review-link:hover {
@@ -203,7 +206,9 @@
     <div class="google-rating">
       <span class="rating-value">5.0</span>
       <span class="rating-stars">⭐⭐⭐⭐⭐</span>
-      <a href="https://www.google.com/search?q=stone+castle+roofing+reviews" class="review-link">(88 Google reviews)</a>
+      <a href="https://www.google.com/search?q=stone+castle+roofing+reviews" class="review-link">
+        (88 Google reviews)
+      </a>
     </div>
 
     <!-- Footer Text -->
