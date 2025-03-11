@@ -10,32 +10,32 @@
       background-color: #f4f4f4;
       display: flex;
       justify-content: center;
-      align-items: flex-start; /* Align content to the top of the screen */
+      align-items: flex-start;
       height: 100vh;
-      margin: 0; /* Removes margin around the body */
-      padding: 0; /* Ensures no extra padding */
-      overflow: hidden; /* Prevent scrolling */
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
     }
     .container {
       width: 100%;
       max-width: 600px;
-      padding: 0; /* Removes extra padding */
-      background-color: white;
+      padding: 0;
+      background-color: white; /* white container */
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
       text-align: center;
-      margin: 0; /* Removes any margin from the container */
+      margin: 0;
     }
     .logo {
-      max-width: 390px; /* Set the desired width for the logo */
-      height: auto; /* Maintain aspect ratio */
-      display: block; /* Center-align the logo */
-      margin: 0 auto; /* Ensure no margin around the logo */
-      object-fit: contain; /* Ensure the logo fits within its container */
+      max-width: 390px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      object-fit: contain;
     }
     .header-section {
-      background-color: #59788E;
-      padding: 15px 20px; /* Keeps padding for content */
-      margin: 0; /* Ensures no margin between elements */
+      background-color: #59788E; /* blue header only */
+      padding: 15px 20px;
+      margin: 0;
     }
     h1 {
       color: white;
@@ -61,16 +61,16 @@
       font-size: 18px;
       border-radius: 5px;
       cursor: pointer;
-      flex: 1; /* Ensures equal spacing */
+      flex: 1;
       text-align: center;
     }
     .contact-actions {
       display: flex;
-      justify-content: space-between; /* Distributes buttons evenly */
+      justify-content: space-between;
       align-items: center;
-      gap: 15px; /* Adds spacing between items */
+      gap: 15px;
       margin-top: 15px;
-      padding: 0 20px; /* Adds padding to the sides for better spacing */
+      padding: 0 20px;
     }
     .linkedin-button img {
       width: 40px;
@@ -87,23 +87,23 @@
       margin-top: 5px;
     }
     .google-rating {
-      margin: 30px 0; /* Adds spacing above and below */
+      margin: 30px 0;
     }
     .rating-value {
       font-family: Arial, sans-serif;
       font-size: 16px;
       font-weight: bold;
-      color: #1F456E; /* Matches the footer text color */
+      color: #1F456E;
     }
     .rating-stars {
       font-family: Arial, sans-serif;
       font-size: 16px;
-      color: #f4b400; /* Google Yellow for stars */
+      color: #f4b400;
     }
     .review-link {
       font-family: Arial, sans-serif;
       font-size: 16px;
-      color: #1a73e8; /* Google Blue for links */
+      color: #1a73e8;
       text-decoration: none;
     }
     .review-link:hover {
@@ -139,30 +139,33 @@
     <!-- Logo -->
     <img src="cropped_logo.png" alt="Stone Castle Roofing Logo" class="logo">
 
-    <!-- Header Section with Background Color -->
+    <!-- Header Section (Blue Background) -->
     <div class="header-section">
-      <!-- Contact Details -->
       <h1>Dylan Goldstein</h1>
       <p>Sales Representative</p>
+    </div>
+    <!-- End of Header Section -->
 
-      <!-- Profile Picture -->
-      <img src="https://raw.githubusercontent.com/Dylan94857/My-Business-Card/main/Profile-pic.avif" 
-     alt="Dylan Goldstein" 
-     class="profile-pic">
+    <!-- Profile Picture on White Background -->
+    <img 
+      src="https://raw.githubusercontent.com/Dylan94857/My-Business-Card/main/Profile-pic.avif"
+      alt="Dylan Goldstein" 
+      class="profile-pic"
+    >
 
-    <!-- Add Contact Button, LinkedIn Button, and Set Appointment Button -->
+    <!-- Contact Buttons Section (Also on White) -->
     <div class="contact-actions">
-      <!-- Add Contact Button -->
       <button class="button" onclick="window.location.href='dylan_goldstein_contact.vcf'">Add Contact</button>
 
-      <!-- LinkedIn Button -->
       <div class="linkedin-button">
         <a href="https://www.linkedin.com/in/dylan-goldstein-mechanical-engineer">
-          <img src="https://raw.githubusercontent.com/Dylan94857/My-Business-Card/ee7293c7ca52796496c1caf34782e7a756885d4e/httpswww.google.comurlsa%3Di%26url%3Dhttps%253A%252F%252Fcommons.wikimedia.org%252Fwiki%252FFile%253ALinkedIn_logo_initials.png%26psig%3DAOvVaw3qI9hfKzj8ALEoLyytr670%26ust%3D1727558746962000%26source%3Dimages%26cd%3Dvfe%26opi%3D89978449%26ved%3D0CBQQjRxqFwoTCLjWuI.png" alt="LinkedIn">
+          <img 
+            src="https://raw.githubusercontent.com/Dylan94857/My-Business-Card/ee7293c7ca52796496c1caf34782e7a756885d4e/httpswww.google.comurlsa%3Di%26url%3Dhttps%253A%252F%252Fcommons.wikimedia.org%252Fwiki%252FFile%253ALinkedIn_logo_initials.png%26psig%3DAOvVaw3qI9hfKzj8ALEoLyytr670%26ust%3D1727558746962000%26source%3Dimages%26cd%3Dvfe%26opi%3D89978449%26ved%3D0CBQQjRxqFwoTCLjWuI.png"
+            alt="LinkedIn"
+          >
         </a>
       </div>
 
-      <!-- Set Appointment Button -->
       <button class="button" onclick="window.location.href='set_appointment.html'">Set Appointment</button>
     </div>
 
@@ -173,7 +176,7 @@
       <a href="https://www.google.com/search?q=stone+castle+roofing+reviews" class="review-link">(88 Google reviews)</a>
     </div>
 
-    <!-- Footer Description -->
+    <!-- Footer Text -->
     <p class="footer-text">Quality Roof Installation and Repair 🏠</p>
     <p class="footer-text">Don't Settle For Less!</p>
   </div>
