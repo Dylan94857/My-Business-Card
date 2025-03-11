@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dylan Goldstein - Sales Representative</title>
   <style>
-    /* Only disable horizontal scrolling */
+    /* 
+      1) Use flexbox so the container is horizontally centered.
+      2) Use flex-direction: column so it stacks top to bottom.
+      3) Remove height: 100vh so the page can scroll vertically.
+      4) overflow-x: hidden locks horizontal scrolling.
+    */
     body {
       font-family: Arial, sans-serif;
       background-color: #f4f4f4;
       margin: 0;
       padding: 0;
-      /* Lock the site horizontally, but allow vertical scrolling */
-      overflow-x: hidden; 
-      /* Remove any height: 100vh or overflow: hidden that was previously forcing no scrolling */
+      display: flex;
+      flex-direction: column; 
+      align-items: center;    /* horizontally center content */
+      overflow-x: hidden;     /* disable horizontal scroll */
     }
 
     .container {
@@ -22,10 +28,10 @@
       background-color: white;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
       text-align: center;
-      margin: 0 auto; /* Centers horizontally */
+      /* margin: 0 auto;  -- This is optional because flexbox + align-items:center
+         already centers it horizontally. Keeping it doesn’t hurt, but it’s not needed. */
     }
 
-    /* Logo style */
     .logo {
       max-width: 390px;
       height: auto;
@@ -34,7 +40,6 @@
       object-fit: contain;
     }
 
-    /* Blue header section remains the same */
     .header-section {
       background-color: #59788E;
       padding: 15px 20px;
@@ -51,24 +56,21 @@
       margin: 5px 0;
     }
 
-    /* New banner area behind the profile picture */
     .profile-banner {
       background: url("Website background.jpg") no-repeat center center;
       background-size: cover;
       text-align: center;
-      padding: 30px 0; /* Adjust for desired banner height */
+      padding: 30px 0; /* space for the banner + pic */
     }
 
-    /* Profile pic with a white circular border */
     .profile-pic {
       width: 150px;
       height: 150px;
       border-radius: 50%;
       margin-top: 10px;
-      border: 3px solid #fff; /* White border */
+      border: 3px solid #fff; /* White circular border */
     }
 
-    /* Contact buttons & LinkedIn style */
     .contact-actions {
       display: flex;
       justify-content: space-between;
@@ -94,7 +96,6 @@
       vertical-align: middle;
     }
 
-    /* Google reviews section */
     .google-rating {
       margin: 30px 0;
     }
@@ -119,7 +120,6 @@
       text-decoration: underline;
     }
 
-    /* Footer text */
     .footer-text {
       margin-top: 20px;
       color: #1F456E;
@@ -130,12 +130,14 @@
       margin-top: 5px;
     }
 
-    /* Responsive adjustments */
+    /* Responsive */
     @media (max-width: 600px) {
+      /* Container might already be centered by flexbox, but 
+         we can add extra padding if needed. */
       .container {
         padding: 10px;
       }
-      h1 {
+      .header-section h1 {
         font-size: 20px;
       }
       .profile-pic {
@@ -161,7 +163,7 @@
     <!-- Logo -->
     <img src="cropped_logo.png" alt="Stone Castle Roofing Logo" class="logo">
 
-    <!-- Blue Header Section (unchanged) -->
+    <!-- Blue Header Section -->
     <div class="header-section">
       <h1>Dylan Goldstein</h1>
       <p>Sales Representative</p>
@@ -178,23 +180,14 @@
 
     <!-- Contact Buttons Section -->
     <div class="contact-actions">
-      <!-- Add Contact Button -->
-      <button class="button" onclick="window.location.href='dylan_goldstein_contact.vcf'">
-        Add Contact
-      </button>
-
-      <!-- LinkedIn Button -->
+      <button class="button" onclick="window.location.href='dylan_goldstein_contact.vcf'">Add Contact</button>
       <div class="linkedin-button">
         <a href="https://www.linkedin.com/in/dylan-goldstein-mechanical-engineer">
           <img src="https://raw.githubusercontent.com/Dylan94857/My-Business-Card/ee7293c7ca52796496c1caf34782e7a756885d4e/httpswww.google.comurlsa%3Di%26url%3Dhttps%253A%252F%252Fcommons.wikimedia.org%252Fwiki%252FFile%253ALinkedIn_logo_initials.png%26psig%3DAOvVaw3qI9hfKzj8ALEoLyytr670%26ust%3D1727558746962000%26source%3Dimages%26cd%3Dvfe%26opi%3D89978449%26ved%3D0CBQQjRxqFwoTCLjWuI.png"
                alt="LinkedIn">
         </a>
       </div>
-
-      <!-- Set Appointment Button -->
-      <button class="button" onclick="window.location.href='set_appointment.html'">
-        Set Appointment
-      </button>
+      <button class="button" onclick="window.location.href='set_appointment.html'">Set Appointment</button>
     </div>
 
     <!-- Google Reviews Section -->
@@ -210,5 +203,8 @@
     <p class="footer-text">Quality Roof Installation and Repair 🏠</p>
     <p class="footer-text">Don't Settle For Less!</p>
   </div>
+</body>
+</html>
+
 </body>
 </html>
