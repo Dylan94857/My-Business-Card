@@ -5,20 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dylan Goldstein - Sales Representative</title>
   <style>
-    /* 1) Removed display: flex; align-items; justify-content; height: 100vh; overflow: hidden; 
-          so the page can scroll naturally if content is taller than the screen. */
+    /* Only disable horizontal scrolling */
     body {
       font-family: Arial, sans-serif;
       background-color: #f4f4f4;
       margin: 0;
       padding: 0;
-      /* Remove or comment out the lines below to allow scrolling:
-         display: flex;
-         justify-content: center;
-         align-items: flex-start;
-         height: 100vh;
-         overflow: hidden;
-      */
+      /* Lock the site horizontally, but allow vertical scrolling */
+      overflow-x: hidden; 
+      /* Remove any height: 100vh or overflow: hidden that was previously forcing no scrolling */
     }
 
     .container {
@@ -27,7 +22,7 @@
       background-color: white;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
       text-align: center;
-      margin: 0 auto; /* Centers the container horizontally */
+      margin: 0 auto; /* Centers horizontally */
     }
 
     /* Logo style */
@@ -117,7 +112,7 @@
     .review-link {
       font-family: Arial, sans-serif;
       font-size: 16px;
-      color: #1a73e8;
+      color: #1a73e8; /* Blue link */
       text-decoration: none;
     }
     .review-link:hover {
