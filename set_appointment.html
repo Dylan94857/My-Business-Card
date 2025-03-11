@@ -6,38 +6,36 @@
   <title>Set Appointment - Dylan Goldstein</title>
   <style>
     body {
-  font-family: Arial, sans-serif;
-  background-color: #59788E; /* Set the background color */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0; /* Removes margin around the body */
-  padding: 0; /* Ensures no extra padding */
-}
-
-.container {
-  width: 100%;
-  max-width: 600px;
-  background-color: white;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  margin: 0; /* Removes any margin from the container */
-  padding: 0; /* Removes extra padding inside the container */
-}
-
-.logo {
-  max-width: 390px; /* Set the desired width for the logo */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Center-align the logo */
-  margin: 0 auto; /* Removes any margin around the logo */
-  object-fit: contain; /* Ensure the logo fits within its container */
-}
+      font-family: Arial, sans-serif;
+      background-color: #59788E;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 100%;
+      max-width: 600px;
+      background-color: white;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    .logo {
+      max-width: 390px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      object-fit: contain;
+    }
     .form-title {
-      color: white; /* Text color for form titles */
+      color: white;
       font-size: 20px;
-      text-align: left; /* Align titles to the left */
-      margin-bottom: 5px; /* Add spacing between the title and the input box */
+      text-align: left;
+      margin-bottom: 5px;
     }
     .input-box {
       width: 100%;
@@ -45,8 +43,8 @@
       font-size: 16px;
       border: 1px solid #ccc;
       border-radius: 5px;
-      margin-bottom: 15px; /* Space between input fields */
-      box-sizing: border-box; /* Ensure proper sizing */
+      margin-bottom: 15px;
+      box-sizing: border-box;
     }
     .submit-button {
       background-color: #1F456E;
@@ -58,7 +56,14 @@
       cursor: pointer;
     }
     .submit-button:hover {
-      background-color: #16374E; /* Slightly darker color on hover */
+      background-color: #16374E;
+    }
+    /* Optional small-footer text styling */
+    .small-footer {
+      color: black;
+      font-size: 12px;
+      margin: 15px; /* Slight spacing above/below */
+      text-align: center;
     }
   </style>
 </head>
@@ -82,9 +87,19 @@
       <label for="email" class="form-title">Email:</label>
       <input type="email" id="email" name="email" class="input-box" placeholder="Enter your email" required>
 
+      <!-- Address Field -->
+      <label for="address" class="form-title">Address:</label>
+      <input type="text" id="address" name="address" class="input-box" placeholder="Enter your address">
+
       <!-- Submit Button -->
       <button type="submit" class="submit-button">Submit</button>
     </form>
+
+    <!-- Small Footer Text -->
+    <p class="small-footer">
+      All information provided is solely used by myself as a means to contact you 
+      and to be prepared for our appointment.
+    </p>
   </div>
 
   <!-- JavaScript for Forced Redirect -->
