@@ -5,8 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dylan Goldstein - Sales Representative</title>
   <style>
-    /* Body uses flex for horizontal centering, 
-       vertical scroll is allowed, horizontal is hidden. */
+    /* 
+       Use flex for horizontal centering,
+       allow vertical scrolling (no fixed height), 
+       hide horizontal overflow.
+    */
     body {
       font-family: Arial, sans-serif;
       background-color: #f4f4f4;
@@ -14,8 +17,8 @@
       padding: 0;
       display: flex;
       flex-direction: column;
-      align-items: center;     /* horizontally center .container */
-      overflow-x: hidden;      /* no horizontal scroll */
+      align-items: center; 
+      overflow-x: hidden;
     }
 
     .container {
@@ -26,21 +29,19 @@
       text-align: center;
     }
 
-    /* 
-      Reduced the width from 390px to 380px 
-      to shrink the logo proportionally by ~10px in height. 
-    */
+    /* Logo: revert to original 390px width */
     .logo {
-      max-width: 380px;  /* was 390px */
+      max-width: 390px; 
       height: auto;
       display: block;
       margin: 0 auto;
       object-fit: contain;
     }
 
+    /* Header: smaller vertical padding (5px top & bottom), keep horizontal at 20px */
     .header-section {
       background-color: #59788E;
-      padding: 15px 20px;
+      padding: 5px 20px;  /* was 15px 20px */
       margin: 0;
     }
     .header-section h1 {
@@ -66,19 +67,15 @@
       height: 150px;
       border-radius: 50%;
       margin-top: 10px;
-      border: 3px solid #fff; /* White circular border */
+      border: 3px solid #fff; /* white circular border */
     }
 
-    /* 
-      Reduced margin-top from 15px to 10px
-      to tighten space above the buttons.
-    */
     .contact-actions {
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 15px;
-      margin-top: 10px;  /* was 15px */
+      margin-top: 10px;  /* keep as is or adjust if you want it tighter */
       padding: 0 20px;
     }
     .button {
@@ -98,12 +95,8 @@
       vertical-align: middle;
     }
 
-    /* 
-      Reduced margin from 30px to 20px 
-      to tighten space around the 5-star review section.
-    */
     .google-rating {
-      margin: 20px 0;  /* was 30px 0 */
+      margin: 20px 0;
     }
     .rating-value {
       font-family: Arial, sans-serif;
@@ -114,34 +107,31 @@
     .rating-stars {
       font-family: Arial, sans-serif;
       font-size: 16px;
-      color: #f4b400; /* Yellow stars */
+      color: #f4b400; /* yellow stars */
     }
     .review-link {
       font-family: Arial, sans-serif;
       font-size: 16px;
-      color: #1a73e8; /* Blue link */
+      color: #1a73e8; 
       text-decoration: none;
     }
     .review-link:hover {
       text-decoration: underline;
     }
 
-    /* 
-      Reduced margin-top from 20px to 15px 
-      to tighten space above each footer text line.
-      You can adjust further as needed. 
-    */
+    /* Footer text: keep first line at 20px margin-top from content above,
+       then cut space between lines in half (from 5px to 2px). */
     .footer-text {
-      margin-top: 15px;  /* was 20px */
+      margin-top: 20px;
       color: #1F456E;
       font-size: 20px;
       font-weight: bold;
     }
     .footer-text:last-of-type {
-      margin-top: 5px; /* remains at 5px to keep that smaller gap between final lines */
+      margin-top: 2px; /* was 5px, now half that (rounded) */
     }
 
-    /* Responsive */
+    /* Responsive adjustments */
     @media (max-width: 600px) {
       .container {
         padding: 10px;
@@ -191,12 +181,11 @@
       >
     </div>
 
-    <!-- Contact Buttons -->
+    <!-- Contact Buttons Section -->
     <div class="contact-actions">
       <button class="button" onclick="window.location.href='dylan_goldstein_contact.vcf'">
         Add Contact
       </button>
-
       <div class="linkedin-button">
         <a href="https://www.linkedin.com/in/dylan-goldstein-mechanical-engineer">
           <img 
@@ -205,13 +194,12 @@
           >
         </a>
       </div>
-
       <button class="button" onclick="window.location.href='set_appointment.html'">
         Set Appointment
       </button>
     </div>
 
-    <!-- Google Reviews -->
+    <!-- Google Reviews Section -->
     <div class="google-rating">
       <span class="rating-value">5.0</span>
       <span class="rating-stars">⭐⭐⭐⭐⭐</span>
